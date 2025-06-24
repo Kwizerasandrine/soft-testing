@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Me - Sandrine</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Same Fonts and CSS as Home page -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9fb;
+      color: #333;
+    }
+
+    nav {
+      background: #fff;
+      padding: 20px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #5d2c91;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+      background-color: #5d2c91;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: 0.3s ease;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      padding: 60px 100px;
+      background-color: #f4f2f8;
+      min-height: 90vh;
+      gap: 80px;
+    }
+
+    .hero-text {
+      max-width: 55%;
+    }
+
+    .hero-text h2 {
+      font-size: 30px;
+      color: #5d2c91;
+      margin-bottom: 15px;
+    }
+
+    .hero-text h2 span {
+      color: #5d2c91;
+    }
+
+    .hero-text h4 {
+      font-size: 18px;
+      color: #5d2c91;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    .hero-text p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    .btn-about {
+      display: inline-block;
+      padding: 10px 25px;
+      border-radius: 25px;
+      background-color: #5d2c91;
+      color: white;
+      font-weight: 500;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .btn-about:hover {
+      background-color: #3f1e65;
+    }
+
+    .hero-img img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .contact-cards {
+      display: flex;
+      justify-content: left;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 40px 100px;
+      background-color: #fff;
+      margin-top: 30px;
+    }
+
+    .card {
+      background-color: #f4f2f8;
+      padding: 15px 10px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 220px;
+      text-align: center;
+    }
+
+    .card h4 {
+      color: #5d2c91;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .card p {
+      font-size:12px;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .hero-text {
+        max-width: 50%;
+      }
+
+      .hero-img {
+        margin-top: 30px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .contact-cards {
+        padding: 10px 20px;
+      }
+
+      .card {
+        width: 70%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">Kwizera Sandrine</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutmid.html">About</a></li>
+      <li><a href="servicesmid.html">Portfolio</a></li>
+      <li><a href="contactmid.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-img">
+      <img src="images/WhatsApp Image 2025-06-24 at 13.40.30.jpeg" alt="Sandrine" />
+    </div>
+    <div class="hero-text">
+      <h2><b> About <span> Me</b></span></h2>
+      <h4> Software Engineering Student</h4>
+      <p>
+        I'm a passionate Software Engineering student at Adventist University of Central Africa (AUCA) with skills in programming, system administration, and UI/UX design. I'm seeking opportunities to apply my expertise in software development or cybersecurity, and data analysis.
+        I am a quick learner and like learning new skills.
+      </p>
+      <a href="MoreAbout.html" class="btn-about">More About</a>
+      <a href="image/CV.pdf" class="btn-about">Download CV</a>
+
+      <div class="contact-cards">
+        <div class="card">
+          <h4>Email</h4>
+          <p>sandrarusangiza@gmail.com</p>
+        </div>
+
+        <div class="card">
+          <h4>Phone</h4>
+          <p>+250784773327</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+<footer style="background-color:#ebe9e9; color:#333; text-align:center; padding:5px 0; margin-top:0px;">
+  <div style="max-width:1000px; margin:auto;">
+    <h4><b>Kwizera Sandrine</b></h4>
+    <p>
+      <a href="index.html" style="color:#333; margin:0 10px; text-decoration:none;">Home</a> |
+      <a href="aboutmid.html" style="color:#333; margin:0 10px; text-decoration:none;">About</a> |
+      <a href="servicesmid.html" style="color:#333; margin:0 10px; text-decoration:none;">Portfolio</a> |
+      <a href="contactmid.html" style="color:#333; margin:0 10px; text-decoration:none;">Contact</a>
+    </p>
+    <p style="margin-top:10px;">&copy; 2025 Kwizera Sandrine. All rights reserved.</p>
+  </div>
+</footer>
+</html>
